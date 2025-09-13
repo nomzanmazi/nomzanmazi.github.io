@@ -4,56 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Artyzen Kicks | Custom Sneakers, Bespoke Wear & Premium Shoe Care</title>
-  <meta name="description" content="Artyzen Kicks brings you custom sneakers, bespoke traditional wear, and premium shoe care services in South Africa. Step into confidence with unique style tailored for you.">
+  <title>Artyzen Kicks | Custom Sneakers & Premium Wear</title>
+  <meta name="description" content="Artyzen Kicks brings you custom sneakers, bespoke wear, and premium shoe care in South Africa.">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Artyzen Kicks | Custom Sneakers & Premium Shoe Care">
-  <meta property="og:description" content="Step into confidence with Artyzen Kicks. Custom sneakers, bespoke fashion, and professional shoe care services.">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Artyzen Kicks | Custom Sneakers & Premium Wear">
+  <meta property="og:description" content="Step into confidence with Artyzen Kicks. Custom sneakers, bespoke fashion, and professional shoe care.">
   <meta property="og:image" content="https://yourwebsite.com/preview.jpg">
-  <meta property="og:url" content="https://yourwebsite.com">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Artyzen Kicks | Custom Sneakers & Shoe Care">
-  <meta name="twitter:description" content="Custom sneakers, bespoke fashion, and professional shoe care services.">
-  <meta name="twitter:image" content="https://yourwebsite.com/preview.jpg">
 
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- Tailwind + Fonts + Icons -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     body { font-family: 'Inter', sans-serif; }
-    .gallery-img { 
-      transition: transform 0.3s, box-shadow 0.3s; 
-      border: none !important; 
+    .gallery-img {
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none !important;
     }
-    .gallery-img:hover { 
-      transform: scale(1.05); 
-      box-shadow: 0 10px 20px rgba(95,158,160,0.4); 
+    .gallery-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(95,158,160,0.5);
     }
-    /* Remove extra card borders/paddings */
-    .img-card { 
-      background: none !important; 
-      padding: 0 !important; 
-      box-shadow: none !important; 
-    }
+    .img-card { background: none !important; padding: 0 !important; box-shadow: none !important; }
   </style>
 </head>
 
 <body class="text-gray-900" style="background: url('5.jpg') no-repeat center center fixed; background-size: cover;">
 
-
   <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
+  <header class="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="#" class="text-2xl font-bold text-teal-800">Artyzen Kicks</a>
-      <div class="hidden md:flex space-x-6">
+      <div class="hidden md:flex space-x-6 font-medium">
         <a href="#suits" class="hover:text-teal-700 transition">Custom Wear</a>
         <a href="#shoes" class="hover:text-teal-700 transition">Footwear</a>
         <a href="#services" class="hover:text-teal-700 transition">Services</a>
@@ -63,7 +48,7 @@
         <i class="fas fa-bars fa-2x"></i>
       </button>
     </nav>
-    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-white/90 backdrop-blur-md">
       <a href="#suits" class="block py-2 hover:text-teal-700">Custom Wear</a>
       <a href="#shoes" class="block py-2 hover:text-teal-700">Footwear</a>
       <a href="#services" class="block py-2 hover:text-teal-700">Services</a>
@@ -71,297 +56,90 @@
     </div>
   </header>
 
-<section
+  <!-- Hero -->
+  <section class="relative h-[70vh] flex items-center text-white">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-teal-900/60"></div>
+    <div class="container mx-auto px-6 text-center relative z-10">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Exquisite Style, Tailored For You</h1>
+      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
+        From bespoke traditional wear to immaculate footwear and care, we craft confidence and elegance into every detail.
+      </p>
+      <a href="#contact" class="bg-teal-700 text-white py-3 px-8 rounded-lg font-semibold hover:bg-teal-600 transition shadow-lg inline-block">Get in Touch</a>
+    </div>
+  </section>
 
   <!-- Main -->
-  <main class="container mx-auto px-6 py-12">
+  <main class="container mx-auto px-6 py-16">
 
-    <!-- Custom Clothing Section -->
-    <section id="suits" class="mb-16">
-      <h2 class="text-3xl font-bold text-center mb-8">Stylish Luminous Kids Sneakers</h2>
+    <!-- Custom Clothing Gallery -->
+    <section id="suits" class="mb-20">
+      <h2 class="text-3xl font-bold text-center mb-12">Stylish Luminous Kids Sneakers</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Images 1–6 (kept, no borders) -->
-        <div class="img-card">
-          <img src="H70f23582dbe143cf86d12cfa9d6fd911T (1).jpg" alt="Man in a sharp grey suit" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="1723368734d7082fb0cfad767af98b1fdc219b6b81_thumbnail_336x (1).webp" alt="Woman in vibrant modern traditional attire" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="H86205afc3bf54b8a81ce7c426544d303c (1).jpg" alt="Woman wearing a modern blue shweshwe dress" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="Hfdc236cf07094e08be7ab89e56912121w (1).jpg" alt="Woman in elegant traditional dress" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="Hf196f75761284bfebab6e7806c00c54aH (1).jpg" alt="Man in a perfectly fitted blue suit" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="Heceef8d78d86471381cf61d2e8f6b1848 (1).jpg" alt="Couple in matching traditional outfits" class="w-full h-80 object-cover gallery-img">
-        </div>
+        <div class="img-card"><img src="H70f23582dbe143cf86d12cfa9d6fd911T (1).jpg" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
+        <div class="img-card"><img src="1723368734d7082fb0cfad767af98b1fdc219b6b81_thumbnail_336x (1).webp" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
+        <div class="img-card"><img src="H86205afc3bf54b8a81ce7c426544d303c (1).jpg" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
+        <div class="img-card"><img src="Hfdc236cf07094e08be7ab89e56912121w (1).jpg" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
+        <div class="img-card"><img src="Hf196f75761284bfebab6e7806c00c54aH (1).jpg" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
+        <div class="img-card"><img src="Heceef8d78d86471381cf61d2e8f6b1848 (1).jpg" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
       </div>
     </section>
 
-    <!-- Shoe Seller Section -->
-    <section id="shoes" class="mb-16">
-      <h2 class="text-3xl font-bold text-center mb-8">Premium Footwear Collection</h2>
+    <!-- Footwear Gallery -->
+    <section id="shoes" class="mb-20">
+      <h2 class="text-3xl font-bold text-center mb-12">Premium Footwear Collection</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Removed Image 7 -->
-        <div class="img-card">
-          <img src="H86205afc3bf54b8a81ce7c426544d303c (1).jpg" alt="Elegant high heels" class="w-full h-80 object-cover gallery-img">
-        </div>
-        <div class="img-card">
-          <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?q=80&w=1975&auto=format&fit=crop" alt="Classic leather dress shoes" class="w-full h-80 object-cover gallery-img">
-        </div>
+        <!-- Removed the 7th image, keeping 2 for style -->
+        <div class="img-card"><img src="H86205afc3bf54b8a81ce7c426544d303c (1).jpg" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
+        <div class="img-card"><img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?q=80&w=1975&auto=format&fit=crop" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
       </div>
     </section>
 
     <!-- Services Section -->
-    <!-- (unchanged, left as-is) -->
+    <section id="services" class="mb-20 bg-white/80 p-10 rounded-xl shadow-lg">
+      <h2 class="text-3xl font-bold text-center mb-12">Expert Shoe Care Services</h2>
+      <div class="flex flex-col md:flex-row justify-around items-center text-center gap-8">
+        <div class="md:w-1/2 px-4">
+          <div class="text-5xl text-teal-800 mb-4"><i class="fas fa-soap"></i></div>
+          <h3 class="text-2xl font-semibold mb-2">Sneaker Cleaning</h3>
+          <p class="text-gray-700">Restore your favorite sneakers to their former glory with deep cleaning removing dirt, scuffs, and stains.</p>
+        </div>
+        <div class="md:w-1/2 px-4">
+          <div class="text-5xl text-teal-800 mb-4"><i class="fas fa-tools"></i></div>
+          <h3 class="text-2xl font-semibold mb-2">Shoe Mending & Repair</h3>
+          <p class="text-gray-700">Expert mending services, from sole replacements to stitch repairs, extending the life of your footwear affordably.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-center mb-20">
+      <h2 class="text-3xl font-bold mb-4">Ready to Elevate Your Style?</h2>
+      <p class="text-lg text-gray-800 mb-8">Contact us today for a consultation or inquiries.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="mailto:nomzanmazi@gmail.com" class="bg-teal-700 text-white py-3 px-6 rounded-lg font-semibold hover:bg-teal-600 transition flex items-center justify-center">
+          <i class="fas fa-envelope mr-2"></i>Email Us
+        </a>
+        <a href="https://wa.me/27680320894" target="_blank" class="bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-500 transition flex items-center justify-center">
+          <i class="fab fa-whatsapp mr-2"></i>WhatsApp Us
+        </a>
+      </div>
+    </section>
 
   </main>
 
   <!-- Footer -->
-  <footer class="bg-stone-900 text-white mt-16">
-    <div class="container mx-auto px-6 py-8 text-center">
-      <p>&copy; 2025 Artyzen Kicks. All Rights Reserved.</p>
-    </div>
+  <footer class="bg-stone-900 text-white py-8 text-center">
+    <p>&copy; 2025 Artyzen Kicks. All Rights Reserved.</p>
+    <p class="mt-2 text-sm text-gray-400">Website by <span class="font-bold">Klickbay</span></p>
   </footer>
 
   <script>
+    // Mobile menu toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+    mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
   </script>
-</body>
-    </html>
-  <div class="bg-red-200 p-2 rounded-lg shadow-lg overflow-hidden">
-                    <img src="H70f23582dbe143cf86d12cfa9d6fd911T (1).jpg" alt="Man in a sharp grey suit" class="w-full h-80 object-cover gallery-img rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/000000?text=Tailored+Suit';">
-                </div>
-                <!-- Image 2 -->
-                <div class="bg-red-200 p-2 rounded-lg shadow-lg overflow-hidden">
-                    <img src="1723368734d7082fb0cfad767af98b1fdc219b6b81_thumbnail_336x (1).webp" alt="Woman in vibrant modern traditional attire" class="w-full h-80 object-cover gallery-img rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/000000?text=Traditional+Wear';">
-                </div>
-                <!-- Image 3 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="H86205afc3bf54b8a81ce7c426544d303c (1).jpg" alt="Woman wearing a modern blue shweshwe dress" class="w-full h-80 object-cover gallery-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/000000?text=Shweshwe+Dress';">
-                </div>
-                 <!-- Image 4 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="Hfdc236cf07094e08be7ab89e56912121w (1).jpg" alt="Woman in elegant traditional dress" class="w-full h-80 object-cover gallery-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/000000?text=Elegant+Dress';">
-                </div>
-                <!-- Image 5 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="Hf196f75761284bfebab6e7806c00c54aH (1).jpg" alt="Man in a perfectly fitted blue suit" class="w-full h-80 object-cover gallery-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/000000?text=Blue+Suit';">
-                </div>
-                <!-- Image 6 (Replaced) -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                     <img src="Heceef8d78d86471381cf61d2e8f6b1848 (1).jpg" alt="Couple in matching traditional outfits" class="w-full h-80 object-cover gallery-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/000000?text=Craftsmanship';">
-                </div>
-            </div>
-        </section>
-
-        <!-- Shoe Seller Section -->
-        <section id="shoes" class="mb-16">
-            <h2 class="text-3xl font-bold text-center mb-8">Premium Footwear Collection</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Image 7 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img H3aeab823742e4b678e32a2b122a21e33U (1).jpg (1).jpg" alt="Modern stylish sneakers" class="w-full h-80 object-cover gallery-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/000000?text=Sneakers';">
-                </div>
-                <!-- Image 8 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="H86205afc3bf54b8a81ce7c426544d303c (1).jpg" alt="Elegant high heels" class="w-full h-80 object-cover gallery-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/000000?text=Heels';">
-                </div>
-                <!-- Image 9 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?q=80&w=1975&auto=format&fit=crop" alt="Classic leather dress shoes" class="w-full h-80 object-cover gallery-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/000000?text=Dress+Shoes';">
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="mb-16 bg-teal-50/50 p-8 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-center mb-8">Expert Shoe Care Services</h2>
-            <div class="flex flex-col md:flex-row justify-around items-center text-center">
-                <!-- Sneaker Cleaning -->
-                <div class="mb-8 md:mb-0 md:w-1/2 px-4">
-                    <div class="text-5xl text-teal-800 mb-4"><i class="fas fa-soap"></i></div>
-                    <h3 class="text-2xl font-semibold mb-2">Sneaker Cleaning</h3>
-                    <p class="text-gray-600">Restore your favorite sneakers to their former glory. Our deep cleaning service removes dirt, scuffs, and stains, making them look brand new at a competitive price.</p>
-                </div>
-                <!-- Shoe Mending -->
-                <div class="md:w-1/2 px-4">
-                    <div class="text-5xl text-teal-800 mb-4"><i class="fas fa-tools"></i></div>
-                    <h3 class="text-2xl font-semibold mb-2">Shoe Mending & Repair</h3>
-                    <p class="text-gray-600">Don't throw away your beloved shoes. We offer expert mending services, from sole replacements to stitch repairs, extending the life of your footwear affordably.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ✨ AI Style Consultant Section -->
-        <section id="ai-consultant" class="mb-16 bg-teal-900 text-white p-8 rounded-lg shadow-lg">
-            <div class="text-center mb-8">
-                 <h2 class="text-3xl font-bold">✨ AI-Powered Style Consultant</h2>
-                 <p class="text-teal-200 mt-2">Need inspiration? Describe your ideal look or let our AI generate a unique style for you.</p>
-            </div>
-            <div class="max-w-2xl mx-auto">
-                <div class="mb-4">
-                    <textarea id="outfit-description" class="w-full h-24 p-3 rounded-md bg-teal-800 text-white border border-teal-600 focus:ring-2 focus:ring-teal-500 focus:outline-none transition" placeholder="e.g., 'A modern traditional outfit for a wedding in Johannesburg...'"></textarea>
-                </div>
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                     <button id="get-suggestions-btn" class="bg-white text-teal-900 py-3 px-6 rounded-lg font-semibold hover:bg-gray-200 transition duration-300 w-full sm:w-auto flex items-center justify-center">
-                        <span class="btn-text">Get AI Suggestions</span>
-                        <i class="fas fa-spinner fa-spin ml-2 hidden"></i>
-                    </button>
-                    <span class="text-gray-400">or</span>
-                    <button id="generate-idea-btn" class="bg-transparent border border-white text-white py-3 px-6 rounded-lg font-semibold hover:bg-white hover:text-teal-900 transition duration-300 w-full sm:w-auto flex items-center justify-center">
-                        <span class="btn-text">✨ Generate a Random Idea</span>
-                         <i class="fas fa-spinner fa-spin ml-2 hidden"></i>
-                    </button>
-                </div>
-                <div id="ai-results" class="mt-8 p-6 bg-teal-800/50 rounded-lg min-h-[100px] border border-teal-700 prose prose-invert max-w-none">
-                    <p class="text-teal-200">Your style suggestions will appear here...</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="text-center">
-            <h2 class="text-3xl font-bold mb-4">Ready to Elevate Your Style?</h2>
-            <p class="text-lg text-gray-600 mb-8">Contact us today for a consultation or to inquire about our services.</p>
-            <div class="flex justify-center space-x-4">
-                <a href="mailto:nomzanmazi@gmail.com" class="bg-teal-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-teal-700 transition duration-300 flex items-center">
-                    <i class="fas fa-envelope mr-2"></i> Email Us
-                </a>
-                <a href="https://wa.me/27680320894" target="_blank" class="bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-500 transition duration-300 flex items-center">
-                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp Us
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-stone-900 text-white mt-16">
-        <div class="container mx-auto px-6 py-8 text-center">
-            <p>&copy; 2024 Artisan Threads & Soles. All Rights Reserved.</p>
-            <p class="mt-2 text-sm text-gray-400">Website designed and developed by <span class="font-bold">Klickbay</span></p>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when a link is clicked
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // AI Style Consultant Logic
-        const getSuggestionsBtn = document.getElementById('get-suggestions-btn');
-        const generateIdeaBtn = document.getElementById('generate-idea-btn');
-        const outfitDescription = document.getElementById('outfit-description');
-        const aiResults = document.getElementById('ai-results');
-
-        const apiKey = ""; // API key will be injected by the environment.
-
-        const toggleLoadingState = (button, isLoading) => {
-            const btnText = button.querySelector('.btn-text');
-            const spinner = button.querySelector('.fa-spinner');
-            if (isLoading) {
-                button.disabled = true;
-                btnText.classList.add('hidden');
-                spinner.classList.remove('hidden');
-            } else {
-                button.disabled = false;
-                btnText.classList.remove('hidden');
-                spinner.classList.add('hidden');
-            }
-        };
-
-        const callGeminiAPI = async (prompt, button) => {
-            toggleLoadingState(button, true);
-            aiResults.innerHTML = '<p class="text-teal-200">Generating your style...</p>';
-            
-            const apiUrl = ` https://thenewblack.ai/ai-clothing-fashion-design-generator -flash-preview-05-20:generateContent?key=${apiKey}`;
-            const payload = {
-                contents: [{ parts: [{ text: prompt }] }],
-            };
-
-            let attempts = 0;
-            const maxAttempts = 5;
-            while (attempts < maxAttempts) {
-                try {
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-
-                    const result = await response.json();
-                    const candidate = result.candidates?.[0];
-
-                    if (candidate && candidate.content?.parts?.[0]?.text) {
-                        let text = candidate.content.parts[0].text;
-                        // Basic markdown to HTML conversion
-                        text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'); // Bold
-                        text = text.replace(/\*(.*?)\*/g, '<em>$1</em>'); // Italics
-                        text = text.replace(/(\n)/g, '<br>'); // Newlines
-                        aiResults.innerHTML = text;
-                    } else {
-                       aiResults.innerHTML = '<p class="text-red-400">Sorry, I couldn\'t come up with a suggestion. The response was empty. Please try again.</p>';
-                    }
-                    toggleLoadingState(button, false);
-                    return;
-
-                } catch (error) {
-                    attempts++;
-                    if (attempts >= maxAttempts) {
-                        console.error('Error fetching AI suggestions:', error);
-                        aiResults.innerHTML = '<p class="text-red-400">Sorry, something went wrong while generating your style. Please try again later.</p>';
-                        toggleLoadingState(button, false);
-                    } else {
-                        const delay = Math.pow(2, attempts) * 1000;
-                        await new Promise(res => setTimeout(res, delay));
-                    }
-                }
-            }
-        };
-
-        getSuggestionsBtn.addEventListener('click', () => {
-            const description = outfitDescription.value;
-            if (description.trim() === '') {
-                aiResults.innerHTML = '<p class="text-yellow-400">Please describe your ideal outfit in the text box above.</p>';
-                return;
-            }
-            const prompt = `Act as an expert fashion consultant for 'Artisan Threads & Soles', a premium brand in South Africa specializing in custom suits, traditional wear, and high-quality footwear. A customer has described their desired look. Based on their description below, provide a detailed outfit recommendation. Include suggestions for fabric, color palette, style of clothing (e.g., suit cut, type of traditional garment), and what kind of shoes from our collection would complete the look. Be creative, elegant, and practical. Customer's description: "${description}"`;
-            callGeminiAPI(prompt, getSuggestionsBtn);
-        });
-
-        generateIdeaBtn.addEventListener('click', () => {
-            const prompt = `Act as an expert fashion consultant for 'Artisan Threads & Soles', a premium brand in South Africa specializing in custom suits, traditional wear, and high-quality footwear. It's currently September 2025 in Gauteng, South Africa. Generate a unique, stylish, and inspiring outfit idea that a potential customer could get tailored. The idea should be suitable for the current season (Spring). It can be for any occasion (e.g., a formal event, a business meeting, or a stylish casual gathering). Describe the complete look, including the type of garment, fabric, colors, and the perfect footwear to match from our collection.`;
-            callGeminiAPI(prompt, generateIdeaBtn);
-        });
-
-    </script>
 
 </body>
 </html>
-
-                
