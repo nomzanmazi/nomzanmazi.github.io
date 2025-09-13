@@ -10,17 +10,18 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Artyzen Kicks | Custom Sneakers & Premium Shoe Care">
   <meta property="og:description" content="Step into confidence with Artyzen Kicks. Custom sneakers, bespoke fashion, and professional shoe care services.">
-  <meta property="og:image" content="https://yourwebsite.com/preview.jpg">
-  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:image" content="https://nomzanmazi.github.io/artyzen-kicks/logo.png">
+  <meta property="og:url" content="https://nomzanmazi.github.io/artyzen-kicks/">
   <meta property="og:type" content="website">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Artyzen Kicks | Custom Sneakers & Shoe Care">
   <meta name="twitter:description" content="Custom sneakers, bespoke fashion, and professional shoe care services.">
-  <meta name="twitter:image" content="https://yourwebsite.com/preview.jpg">
+  <meta name="twitter:image" content="https://nomzanmazi.github.io/artyzen-kicks/logo.png">
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Favicon -->
+  <link rel="icon" href="logo.png" type="image/png">
 
   <!-- Tailwind + Fonts + Icons -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -42,9 +43,8 @@
       padding: 0 !important; 
       box-shadow: none !important; 
     }
-    /* White outline on headings */
-    h1, h2 {
-      text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    h1, h2, h3 { 
+      text-shadow: 0 0 2px white, 0 0 4px white; 
     }
   </style>
 </head>
@@ -54,17 +54,27 @@
   <!-- Header -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#" class="text-2xl font-bold text-teal-800">Artyzen Kicks</a>
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-3">
+        <img src="logo.png" alt="Artyzen Kicks Logo" class="h-12 w-auto">
+        <span class="sr-only">Artyzen Kicks</span>
+      </a>
+
+      <!-- Desktop Menu -->
       <div class="hidden md:flex space-x-6">
         <a href="#suits" class="hover:text-teal-700 transition">Custom Wear</a>
         <a href="#shoes" class="hover:text-teal-700 transition">Footwear</a>
         <a href="#services" class="hover:text-teal-700 transition">Services</a>
         <a href="#contact" class="hover:text-teal-700 transition">Contact</a>
       </div>
+
+      <!-- Mobile Menu Button -->
       <button id="mobile-menu-button" class="md:hidden text-teal-800">
         <i class="fas fa-bars fa-2x"></i>
       </button>
     </nav>
+
+    <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
       <a href="#suits" class="block py-2 hover:text-teal-700">Custom Wear</a>
       <a href="#shoes" class="block py-2 hover:text-teal-700">Footwear</a>
@@ -74,9 +84,9 @@
   </header>
 
   <!-- Hero -->
-  <section class="relative h-[60vh] flex items-center text-white">
-    <div class="absolute inset-0 bg-[#5F9EA0] opacity-70"></div>
-    <div class="container mx-auto px-6 text-center relative z-10">
+  <section class="relative h-[60vh] flex items-center justify-center text-center text-white">
+    <div class="absolute inset-0 bg-[#5F9EA0] bg-opacity-70"></div>
+    <div class="relative z-10 px-6">
       <h1 class="text-4xl md:text-6xl font-bold mb-4">Exquisite Style, Tailored For You.</h1>
       <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
         From bespoke traditional wear to immaculate footwear and care, we craft confidence and elegance into every detail.
@@ -145,63 +155,22 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-white bg-opacity-90 py-6 mt-12 text-center text-sm text-gray-700">
-    <p>&copy; 2025 Artyzen Kicks. All rights reserved.</p>
+  <footer class="bg-white py-8 shadow-inner">
+    <div class="container mx-auto px-6 text-center">
+      <div class="flex justify-center mb-4">
+        <img src="logo.png" alt="Artyzen Kicks Logo" class="h-12 w-auto">
+      </div>
+      <p class="text-gray-600">© 2025 Artyzen Kicks. All rights reserved.</p>
+    </div>
   </footer>
 
+  <!-- Mobile menu toggle -->
   <script>
-    // Mobile menu toggle
-    document.getElementById('mobile-menu-button').addEventListener('click', () => {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
+    const btn = document.getElementById("mobile-menu-button");
+    const menu = document.getElementById("mobile-menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
     });
   </script>
-
-</body>
-    </html>
-          <section id="services" class="mb-20 bg-white/80 p-10 rounded-xl shadow-lg">
-      <h2 class="text-3xl font-bold text-center mb-12">Expert Shoe Care Services</h2>
-      <div class="flex flex-col md:flex-row justify-around items-center text-center gap-8">
-        <div class="md:w-1/2 px-4">
-          <div class="text-5xl text-teal-800 mb-4"><i class="fas fa-soap"></i></div>
-          <h3 class="text-2xl font-semibold mb-2">Sneaker Cleaning</h3>
-          <p class="text-gray-700">Restore your favorite sneakers to their former glory with deep cleaning removing dirt, scuffs, and stains.</p>
-        </div>
-        <div class="md:w-1/2 px-4">
-          <div class="text-5xl text-teal-800 mb-4"><i class="fas fa-tools"></i></div>
-          <h3 class="text-2xl font-semibold mb-2">Shoe Mending & Repair</h3>
-          <p class="text-gray-700">Expert mending services, from sole replacements to stitch repairs, extending the life of your footwear affordably.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="text-center mb-20">
-      <h2 class="text-3xl font-bold mb-4">Ready to Elevate Your Style?</h2>
-      <p class="text-lg text-gray-800 mb-8">Contact us today for a consultation or inquiries.</p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="mailto:nomzanmazi@gmail.com" class="bg-teal-700 text-white py-3 px-6 rounded-lg font-semibold hover:bg-teal-600 transition flex items-center justify-center">
-          <i class="fas fa-envelope mr-2"></i>Email Us
-        </a>
-        <a href="https://wa.me/27680320894" target="_blank" class="bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-500 transition flex items-center justify-center">
-          <i class="fab fa-whatsapp mr-2"></i>WhatsApp Us
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-stone-900 text-white py-8 text-center">
-    <p>&copy; 2025 Artyzen Kicks. All Rights Reserved.</p>
-    <p class="mt-2 text-sm text-gray-400">Website by <span class="font-bold">Klickbay</span></p>
-  </footer>
-
-  <script>
-    // Mobile menu toggle
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
-  </script>
-
 </body>
 </html>
