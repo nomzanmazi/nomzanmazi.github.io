@@ -4,41 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Artyzen Kicks | Custom Sneakers & Premium Wear</title>
-  <meta name="description" content="Artyzen Kicks brings you custom sneakers, bespoke wear, and premium shoe care in South Africa.">
+  <title>Artyzen Kicks | Custom Sneakers, Bespoke Wear & Premium Shoe Care</title>
+  <meta name="description" content="Artyzen Kicks brings you custom sneakers, bespoke traditional wear, and premium shoe care services in South Africa. Step into confidence with unique style tailored for you.">
 
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Artyzen Kicks | Custom Sneakers & Premium Wear">
-  <meta property="og:description" content="Step into confidence with Artyzen Kicks. Custom sneakers, bespoke fashion, and professional shoe care.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Artyzen Kicks | Custom Sneakers & Premium Shoe Care">
+  <meta property="og:description" content="Step into confidence with Artyzen Kicks. Custom sneakers, bespoke fashion, and professional shoe care services.">
   <meta property="og:image" content="https://yourwebsite.com/preview.jpg">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Artyzen Kicks | Custom Sneakers & Shoe Care">
+  <meta name="twitter:description" content="Custom sneakers, bespoke fashion, and professional shoe care services.">
+  <meta name="twitter:image" content="https://yourwebsite.com/preview.jpg">
 
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Tailwind + Fonts + Icons -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     body { font-family: 'Inter', sans-serif; }
-    .gallery-img {
-      transition: transform 0.3s, box-shadow 0.3s;
-      border: none !important;
+    .gallery-img { 
+      transition: transform 0.3s, box-shadow 0.3s; 
+      border: none !important; 
     }
-    .gallery-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(95,158,160,0.5);
+    .gallery-img:hover { 
+      transform: scale(1.05); 
+      box-shadow: 0 10px 20px rgba(95,158,160,0.4); 
     }
-    .img-card { background: none !important; padding: 0 !important; box-shadow: none !important; }
+    .img-card { 
+      background: none !important; 
+      padding: 0 !important; 
+      box-shadow: none !important; 
+    }
+    /* White outline on headings */
+    h1, h2 {
+      text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    }
   </style>
 </head>
 
 <body class="text-gray-900" style="background: url('5.jpg') no-repeat center center fixed; background-size: cover;">
 
   <!-- Header -->
-  <header class="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50">
+  <header class="bg-white shadow-md sticky top-0 z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="#" class="text-2xl font-bold text-teal-800">Artyzen Kicks</a>
-      <div class="hidden md:flex space-x-6 font-medium">
+      <div class="hidden md:flex space-x-6">
         <a href="#suits" class="hover:text-teal-700 transition">Custom Wear</a>
         <a href="#shoes" class="hover:text-teal-700 transition">Footwear</a>
         <a href="#services" class="hover:text-teal-700 transition">Services</a>
@@ -48,7 +65,7 @@
         <i class="fas fa-bars fa-2x"></i>
       </button>
     </nav>
-    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-white/90 backdrop-blur-md">
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
       <a href="#suits" class="block py-2 hover:text-teal-700">Custom Wear</a>
       <a href="#shoes" class="block py-2 hover:text-teal-700">Footwear</a>
       <a href="#services" class="block py-2 hover:text-teal-700">Services</a>
@@ -57,46 +74,91 @@
   </header>
 
   <!-- Hero -->
-  <section class="relative h-[70vh] flex items-center text-white">
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-teal-900/60"></div>
+  <section class="relative h-[60vh] flex items-center text-white">
+    <div class="absolute inset-0 bg-[#5F9EA0] opacity-70"></div>
     <div class="container mx-auto px-6 text-center relative z-10">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Exquisite Style, Tailored For You</h1>
-      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Exquisite Style, Tailored For You.</h1>
+      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
         From bespoke traditional wear to immaculate footwear and care, we craft confidence and elegance into every detail.
       </p>
-      <a href="#contact" class="bg-teal-700 text-white py-3 px-8 rounded-lg font-semibold hover:bg-teal-600 transition shadow-lg inline-block">Get in Touch</a>
+      <a href="https://www.yaga.co.za/artyzen-kicks" target="_blank" class="bg-teal-700 text-white py-3 px-8 rounded-lg font-semibold hover:bg-teal-600 transition">Shop on Yaga</a>
     </div>
   </section>
 
   <!-- Main -->
-  <main class="container mx-auto px-6 py-16">
+  <main class="container mx-auto px-6 py-12">
 
-    <!-- Custom Clothing Gallery -->
-    <section id="suits" class="mb-20">
-      <h2 class="text-3xl font-bold text-center mb-12">Stylish Luminous Kids Sneakers</h2>
+    <!-- Custom Clothing Section -->
+    <section id="suits" class="mb-16">
+      <h2 class="text-3xl font-bold text-center mb-8">Stylish Luminous Kids Sneakers</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="img-card"><img src="H70f23582dbe143cf86d12cfa9d6fd911T (1).jpg" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
-        <div class="img-card"><img src="1723368734d7082fb0cfad767af98b1fdc219b6b81_thumbnail_336x (1).webp" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
-        <div class="img-card"><img src="H86205afc3bf54b8a81ce7c426544d303c (1).jpg" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
-        <div class="img-card"><img src="Hfdc236cf07094e08be7ab89e56912121w (1).jpg" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
-        <div class="img-card"><img src="Hf196f75761284bfebab6e7806c00c54aH (1).jpg" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
-        <div class="img-card"><img src="Heceef8d78d86471381cf61d2e8f6b1848 (1).jpg" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
-      </div>
-    </section>
-
-    <!-- Footwear Gallery -->
-    <section id="shoes" class="mb-20">
-      <h2 class="text-3xl font-bold text-center mb-12">Premium Footwear Collection</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Removed the 7th image, keeping 2 for style -->
-        <div class="img-card"><img src="H86205afc3bf54b8a81ce7c426544d303c (1).jpg" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
-        <div class="img-card"><img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?q=80&w=1975&auto=format&fit=crop" alt="" class="w-full h-80 object-cover gallery-img rounded-lg"></div>
+        <div class="img-card">
+          <img src="H70f23582dbe143cf86d12cfa9d6fd911T (1).jpg" alt="Man in a sharp grey suit" class="w-full h-80 object-cover gallery-img">
+        </div>
+        <div class="img-card">
+          <img src="1723368734d7082fb0cfad767af98b1fdc219b6b81_thumbnail_336x (1).webp" alt="Woman in vibrant modern traditional attire" class="w-full h-80 object-cover gallery-img">
+        </div>
+        <div class="img-card">
+          <img src="H86205afc3bf54b8a81ce7c426544d303c (1).jpg" alt="Woman wearing a modern blue shweshwe dress" class="w-full h-80 object-cover gallery-img">
+        </div>
+        <div class="img-card">
+          <img src="Hfdc236cf07094e08be7ab89e56912121w (1).jpg" alt="Woman in elegant traditional dress" class="w-full h-80 object-cover gallery-img">
+        </div>
+        <div class="img-card">
+          <img src="Hf196f75761284bfebab6e7806c00c54aH (1).jpg" alt="Man in a perfectly fitted blue suit" class="w-full h-80 object-cover gallery-img">
+        </div>
+        <div class="img-card">
+          <img src="Heceef8d78d86471381cf61d2e8f6b1848 (1).jpg" alt="Couple in matching traditional outfits" class="w-full h-80 object-cover gallery-img">
+        </div>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="mb-20 bg-white/80 p-10 rounded-xl shadow-lg">
+    <section id="services" class="mb-16">
+      <h2 class="text-3xl font-bold text-center mb-8">Our Premium Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+        <div class="p-6 bg-white bg-opacity-80 rounded-lg shadow-md">
+          <i class="fas fa-shoe-prints text-4xl text-teal-700 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Sneaker Customization</h3>
+          <p>Personalized sneaker designs to make every step a statement.</p>
+        </div>
+        <div class="p-6 bg-white bg-opacity-80 rounded-lg shadow-md">
+          <i class="fas fa-tshirt text-4xl text-teal-700 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Bespoke Wear</h3>
+          <p>Unique, tailored traditional and modern outfits that define your style.</p>
+        </div>
+        <div class="p-6 bg-white bg-opacity-80 rounded-lg shadow-md">
+          <i class="fas fa-pump-soap text-4xl text-teal-700 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Premium Shoe Care</h3>
+          <p>Keep your kicks spotless and fresh with professional care services.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-center">
+      <h2 class="text-3xl font-bold mb-8">Connect With Us</h2>
+      <p class="mb-6">Follow us and shop the latest drops directly on our Yaga store.</p>
+      <a href="https://www.yaga.co.za/artyzen-kicks" target="_blank" class="bg-teal-700 text-white py-3 px-8 rounded-lg font-semibold hover:bg-teal-600 transition">Shop on Yaga</a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white bg-opacity-90 py-6 mt-12 text-center text-sm text-gray-700">
+    <p>&copy; 2025 Artyzen Kicks. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+    </html>
+          <section id="services" class="mb-20 bg-white/80 p-10 rounded-xl shadow-lg">
       <h2 class="text-3xl font-bold text-center mb-12">Expert Shoe Care Services</h2>
       <div class="flex flex-col md:flex-row justify-around items-center text-center gap-8">
         <div class="md:w-1/2 px-4">
