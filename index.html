@@ -1,102 +1,97 @@
-            <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Primary SEO -->
   <title>Artyzen Kicks | Custom Sneakers, Bespoke Wear & Premium Shoe Care</title>
   <meta name="description" content="Artyzen Kicks brings you custom sneakers, bespoke traditional wear, and premium shoe care services in South Africa. Step into confidence with unique style tailored for you.">
-  <meta name="keywords" content="custom sneakers, bespoke wear, shoe care, sneaker cleaning, sneaker restoration, South Africa fashion, Artyzen Kicks">
 
-  <!-- Open Graph (Facebook & LinkedIn) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Artyzen Kicks | Custom Sneakers & Premium Shoe Care">
   <meta property="og:description" content="Step into confidence with Artyzen Kicks. Custom sneakers, bespoke fashion, and professional shoe care services.">
   <meta property="og:image" content="https://yourwebsite.com/preview.jpg">
   <meta property="og:url" content="https://yourwebsite.com">
   <meta property="og:type" content="website">
 
-  <!-- Twitter Card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Artyzen Kicks | Custom Sneakers & Shoe Care">
-  <meta name="twitter:description" content="Custom sneakers, bespoke fashion, and professional shoe care services. Designed for style, built for confidence.">
+  <meta name="twitter:description" content="Custom sneakers, bespoke fashion, and professional shoe care services.">
   <meta name="twitter:image" content="https://yourwebsite.com/preview.jpg">
 
-  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Fonts & Styles -->
+  <!-- Tailwind + Fonts + Icons -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-  body {
-    font-family: 'Inter', sans-serif;
-    background: url('5.jpg') no-repeat center center fixed;
-    background-size: cover;
-  }
-
-  .gallery-img {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-  .gallery-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(221,160,221);
-  }
-</style>
+    body { font-family: 'Inter', sans-serif; }
+    .gallery-img { transition: transform 0.3s, box-shadow 0.3s; }
+    .gallery-img:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(95,158,160,0.4); }
+  </style>
 </head>
 
+<body class="bg-stone-50 text-gray-900">
 
-<body class="bg-stone-50 text-RebeccaPurple-800">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-teal-800">Artyzen Kicks</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="#suits" class="hover:text-teal-700 transition">Custom Wear</a>
+        <a href="#shoes" class="hover:text-teal-700 transition">Footwear</a>
+        <a href="#services" class="hover:text-teal-700 transition">Services</a>
+        <a href="#contact" class="hover:text-teal-700 transition">Contact</a>
+      </div>
+      <button id="mobile-menu-button" class="md:hidden text-teal-800">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+      <a href="#suits" class="block py-2 hover:text-teal-700">Custom Wear</a>
+      <a href="#shoes" class="block py-2 hover:text-teal-700">Footwear</a>
+      <a href="#services" class="block py-2 hover:text-teal-700">Services</a>
+      <a href="#contact" class="block py-2 hover:text-teal-700">Contact</a>
+    </div>
+  </header>
 
-    <!-- Header Section -->
-    <header class="bg-orange shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold text-RebeccaPurple-900">Artisan Threads & Soles</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="#suits" class="text-red-600 hover:text-gray-900 transition">Custom Wear</a>
-                <a href="#shoes" class="text-red-600 hover:text-gray-900 transition">Footwear</a>
-                <a href="#services" class="text-red-600 hover:text-gray-900 transition">Services</a>
-                <a href="#contact" class="text-red-600 hover:text-gray-900 transition">Contact</a>
-            </div>
-            <button id="mobile-menu-button" class="md:hidden text-RebeccaPurple-800">
-                <i class="fas fa-bars fa-2x"></i>
-            </button>
-        </nav>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#suits" class="block py-2 text-gray-600 hover:text-purple-900 transition">Custom Wear</a>
-            <a href="#shoes" class="block py-2 text-gray-600 hover:text-purple-900 transition">Footwear</a>
-            <a href="#services" class="block py-2 text-gray-600 hover:text-purple-900 transition">Services</a>
-            <a href="#contact" class="block py-2 text-gray-600 hover:text-purple-900 transition">Contact</a>
-        </div>
-    </header>
-<!-- Hero Section -->
-<section 
-  class="relative h-[60vh] flex items-center text-white bg-[#5F9EA0]
-"
->
-  <!-- Content -->
-  <div class="relative container mx-auto px-6 text-center">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">
-      Exquisite Style, Tailored For You.
-    </h1>
-    <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-      From bespoke traditional wear to immaculate footwear and care, we craft confidence and elegance into every detail.
-    </p>
-    <a href="#contact" class="bg-DarkOliveGreen-700 text-white py-3 px-8 rounded-lg font-semibold hover:bg-teal-600 transition duration-300">
-      Get in Touch
-    </a>
-  </div>
-</section>
+  <!-- Hero -->
+  <section class="relative h-[60vh] flex items-center text-white bg-[#5F9EA0]">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Exquisite Style, Tailored For You.</h1>
+      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+        From bespoke traditional wear to immaculate footwear and care, we craft confidence and elegance into every detail.
+      </p>
+      <a href="#contact" class="bg-teal-700 text-white py-3 px-8 rounded-lg font-semibold hover:bg-teal-600 transition">Get in Touch</a>
+    </div>
+  </section>
 
+  <!-- Main -->
+  <main class="container mx-auto px-6 py-12">
+    <!-- Sections kept (Sneakers, Footwear, Services, AI, Contact) -->
+    <!-- … your content … -->
+  </main>
 
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-white mt-16">
+    <div class="container mx-auto px-6 py-8 text-center">
+      <p>&copy; 2025 Artyzen Kicks. All Rights Reserved.</p>
+    </div>
+  </footer>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
-
-        <!-- Custom Clothing Section -->
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+              </html>
+              <!-- Custom Clothing Section -->
         <section id="suits" class="mb-16">
             <h2 class="text-3xl font-bold text-center mb-8">Stylish Luminous Kids Sneakers</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
