@@ -29,8 +29,20 @@
 
   <style>
     body { font-family: 'Inter', sans-serif; }
-    .gallery-img { transition: transform 0.3s, box-shadow 0.3s; }
-    .gallery-img:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(95,158,160,0.4); }
+    .gallery-img { 
+      transition: transform 0.3s, box-shadow 0.3s; 
+      border: none !important; 
+    }
+    .gallery-img:hover { 
+      transform: scale(1.05); 
+      box-shadow: 0 10px 20px rgba(95,158,160,0.4); 
+    }
+    /* Remove extra card borders/paddings */
+    .img-card { 
+      background: none !important; 
+      padding: 0 !important; 
+      box-shadow: none !important; 
+    }
   </style>
 </head>
 
@@ -71,8 +83,50 @@
 
   <!-- Main -->
   <main class="container mx-auto px-6 py-12">
-    <!-- Sections kept (Sneakers, Footwear, Services, AI, Contact) -->
-    <!-- … your content … -->
+
+    <!-- Custom Clothing Section -->
+    <section id="suits" class="mb-16">
+      <h2 class="text-3xl font-bold text-center mb-8">Stylish Luminous Kids Sneakers</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Images 1–6 (kept, no borders) -->
+        <div class="img-card">
+          <img src="H70f23582dbe143cf86d12cfa9d6fd911T (1).jpg" alt="Man in a sharp grey suit" class="w-full h-80 object-cover gallery-img">
+        </div>
+        <div class="img-card">
+          <img src="1723368734d7082fb0cfad767af98b1fdc219b6b81_thumbnail_336x (1).webp" alt="Woman in vibrant modern traditional attire" class="w-full h-80 object-cover gallery-img">
+        </div>
+        <div class="img-card">
+          <img src="H86205afc3bf54b8a81ce7c426544d303c (1).jpg" alt="Woman wearing a modern blue shweshwe dress" class="w-full h-80 object-cover gallery-img">
+        </div>
+        <div class="img-card">
+          <img src="Hfdc236cf07094e08be7ab89e56912121w (1).jpg" alt="Woman in elegant traditional dress" class="w-full h-80 object-cover gallery-img">
+        </div>
+        <div class="img-card">
+          <img src="Hf196f75761284bfebab6e7806c00c54aH (1).jpg" alt="Man in a perfectly fitted blue suit" class="w-full h-80 object-cover gallery-img">
+        </div>
+        <div class="img-card">
+          <img src="Heceef8d78d86471381cf61d2e8f6b1848 (1).jpg" alt="Couple in matching traditional outfits" class="w-full h-80 object-cover gallery-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Shoe Seller Section -->
+    <section id="shoes" class="mb-16">
+      <h2 class="text-3xl font-bold text-center mb-8">Premium Footwear Collection</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Removed Image 7 -->
+        <div class="img-card">
+          <img src="H86205afc3bf54b8a81ce7c426544d303c (1).jpg" alt="Elegant high heels" class="w-full h-80 object-cover gallery-img">
+        </div>
+        <div class="img-card">
+          <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?q=80&w=1975&auto=format&fit=crop" alt="Classic leather dress shoes" class="w-full h-80 object-cover gallery-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- (unchanged, left as-is) -->
+
   </main>
 
   <!-- Footer -->
@@ -90,13 +144,8 @@
     });
   </script>
 </body>
-              </html>
-              <!-- Custom Clothing Section -->
-        <section id="suits" class="mb-16">
-            <h2 class="text-3xl font-bold text-center mb-8">Stylish Luminous Kids Sneakers</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Image 1 -->
-                <div class="bg-red-200 p-2 rounded-lg shadow-lg overflow-hidden">
+    </html>
+  <div class="bg-red-200 p-2 rounded-lg shadow-lg overflow-hidden">
                     <img src="H70f23582dbe143cf86d12cfa9d6fd911T (1).jpg" alt="Man in a sharp grey suit" class="w-full h-80 object-cover gallery-img rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/000000?text=Tailored+Suit';">
                 </div>
                 <!-- Image 2 -->
